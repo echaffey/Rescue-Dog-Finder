@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <p><b><u>NEW DOGGOS:</u></b></p></br>
+    {{ for dog in dogs_to_email }}
+    <a href="http://www.cenlaallianceforanimals.com/Adopt/ViewAnimal?petId={{ dog['ID'] }}">
+        {{ dog['name'] }} | {{ dog['sex'] }} | {{ dog['breed'] }} | {{ dog['size'] }}
+    </a>
+    </br>
+    </br>
+    {{ endfor }}
+</body>
+
+</html>
